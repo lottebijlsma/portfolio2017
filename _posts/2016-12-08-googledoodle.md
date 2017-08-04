@@ -2,7 +2,7 @@
 layout: portfolio
 title: "Google Doodle"
 caption: A school project for motion graphics
-coverimage: img/projects/google.jpg
+coverimage: img/projects/nicopaffgen.jpg
 category: motion
 
 link: https://vimeo.com/194825195

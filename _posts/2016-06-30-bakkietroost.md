@@ -2,7 +2,7 @@
 layout: portfolio
 title: Bakkie Troostival
 caption: A festival for the Flemish people who can't stand the Walloons anymore.
-coverimage: img/projects/bakkie.jpg
+coverimage: img/projects/nicopaffgen.jpg
 category: web
 
 link: https://student.howest.be/lotte.bijlsma/20152016/MAII/TRK/

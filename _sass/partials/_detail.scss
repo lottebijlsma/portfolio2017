@@ -1,5 +1,6 @@
 .portfolio-detail {
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   margin-top: 2rem;
 
@@ -23,5 +24,15 @@
 
     header {margin-bottom: -20px;} //hacky fix
     p {padding-top: 20px;}
+  }
+
+  .project-header {
+    display: flex;
+    align-self: center;
+  }
+
+  .project-title {
+    font-size: 3rem;
+    align-self: center;
   }
 }
