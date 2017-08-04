@@ -1,0 +1,169 @@
+---
+---
+@import 'reset';
+
+@import 'util/vars';
+@import 'util/globals';
+@import 'util/mixins';
+
+@import 'partials/detail';
+@import 'partials/about';
+@import 'partials/typography';
+
+html {font-size: 62.5%;}
+
+body {
+  background-color: $bg-color;
+  color: $steel-gray;
+  height: 100%;
+}
+
+h1 {margin-bottom: 10px;}
+
+h2 {margin-top: 10px;}
+
+h3 {width: 100%;}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.li-about {
+  list-style-type: none;
+
+  &::before {
+    content: '- ';
+  }
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.main-nav {
+  display: flex;
+  z-index: 3;
+  position: absolute;
+
+  & li {
+    color: $steel-gray;
+    margin-top: 1rem;
+    margin-right: 3rem;
+    padding: .1rem;
+    font-size: 1.8rem;
+
+    @media (min-width: 0) and (max-width: 666px) {
+    margin-top: 3rem;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.portfolio-block {
+  height: 120px;
+  margin-bottom: 120px;
+  margin-right: 10px;
+
+  @media (min-width: 320px) and (max-width: 666px) {margin-right: 0;}
+
+  img {
+    filter: contrast(100%);
+    transition: filter 400ms;
+  }
+
+  img:hover {
+    filter: contrast(105%);
+  }
+
+  & header {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.social-icons {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+
+  @include mq(iphone-5) {justify-content: center;}
+  @include mq(iphone-6) {justify-content: center;}
+  @include mq(iphone-6-landscape) {justify-content: center;}
+  @include mq(ipad) {justify-content: center;}
+
+  i {
+    color: $steel-gray;
+    padding: 5px;
+
+    @media (max-width: 330px) {
+      padding-left: 1rem;
+    }
+
+    @media (min-width: 331px) and (max-width: 958px) {
+      padding-left: 1.2rem;
+    }
+  }
+}
+
+.social-info {
+  margin-bottom: 20px;
+  margin-right: 120px;
+}
+
+em {
+  background-image: linear-gradient(0deg,transparent 8px,$faded-red 0);
+  background-position: left 1rem top .7rem;
+  padding: .5;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {color: $bleu-de-france;}
+
+.a-main-nav:link,
+.a-main-nav:hover,
+.a-main-nav:active,
+.a-main-nav:visited {color: $steel-gray;}
+
+.vimeo {
+  width: 100%;
+  height: 50vw;
+
+  @media (min-width: 320px) and (max-width: 800px) {
+    height: 60vw;
+  }
+}
+
+.footer {
+  background: $steel-gray;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+  margin-top: 7rem;
+}
+
+.footer-section {
+  max-width: 30rem;
+}
+
+.social-section {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.socials {
+  margin-right: 2rem;
+}

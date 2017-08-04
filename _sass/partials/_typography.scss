@@ -1,0 +1,62 @@
+body {
+  font-family: TofinoReg, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.55;
+}
+
+h1 {
+  font-family: TofinoBold, sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: TofinoReg, sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  font-family: TofinoReg, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+h4 {
+  color: $steel-gray;
+  font-family: TofinoReg, sans-serif;
+  font-size: 1.3rem;
+}
+
+strong {
+  font-family: TofinoBold, sans-serif;
+  font-weight: bold;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited { text-decoration: none; }
+
+.a-main-nav:link,
+.a-main-nav:hover,
+.a-main-nav:active,
+.a-main-nav:visited { text-transform: none; }
+
+.secondary-nav li { font-size: 1.1rem; }
+
+.secondary-nav li,
+.main-nav li { text-transform: uppercase; }
+
+.post-title { text-align: center; }
+
+.social-icons {
+
+  i {
+    @media (max-width: 330px) { font-size: 2.2rem; }
+
+    @media (min-width: 331px) and (max-width: 958px) { font-size: 2.2rem; }
+  }
+}

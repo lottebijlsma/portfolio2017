@@ -1,0 +1,15 @@
+@mixin mq($point) {
+  @if $point == iphone-5 {
+    @media (max-width: 330px) { @content; }
+  } @else if $point == iphone-6 {
+    @media (min-width: 331px) and (max-width: 666px) { @content; }
+  } @else if $point == iphone-6-landscape {
+    @media (min-width: 667px) and (max-width: 736px) { @content; }
+  } @else if $point == ipad {
+    @media (min-width: 737px) and (max-width: 958px) { @content; }
+  }
+}
+
+@mixin mobile-all() {
+  @media (min-width: 330px) and (max-width: 958px) { @content; }
+}

@@ -1,0 +1,62 @@
+.about {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+
+  @media (min-width: 0) and (max-width: 736px) {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 10px;
+  }
+}
+
+.faves {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.fave {
+  background: white;
+  border-left: .8rem solid $faded-red;
+  padding: 3rem;
+  margin-right: 5rem;
+  margin-top: 5rem;
+}
+
+.fave-love{
+  width: 25rem;
+}
+
+.fave-current{
+  width: 35rem;
+}
+
+.fave-study{
+  width: 27rem;
+}
+
+.about-img {
+  z-index: -2;
+  width: 100vw;
+  height: 100%;
+  align-self:center;
+  margin-bottom: 5rem;
+}
+
+.about-txt {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
+.about-intro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.fave-title {
+  color: $faded-red;
+}

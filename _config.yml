@@ -1,0 +1,50 @@
+name: lottebijlsma
+
+baseurl: ""
+permalink: pretty
+url: https://lottebijlsma.be
+enforce_ssl: lottebijlsma.be
+
+site_theme:
+  behance: lottebijlsma
+  dribble: lottebijlsma
+  instagram: lotte.bijlsma
+  vimeo: lotteb
+  twitter: bijlsmalotte
+  email: bijlsmalotte@gmail.com
+  linkedin: lottebijlsma
+
+  categories:
+    - Branding
+    - Concept
+    - Design
+    - Motion
+    - Print
+    - Web
+
+strings:
+  next: "Next"
+  previous: "Previous"
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+autoprefixer:
+  flexbox: no-2009
+
+gems:
+  - octopress-autoprefixer
+
+exclude:
+  - .travis.yml
+  - .editorconfig
+  - .scss-lint.yml
+  - .eslint*
+  - bin/*
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - LICENSE
+  - vendor

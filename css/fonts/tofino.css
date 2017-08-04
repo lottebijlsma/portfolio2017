@@ -1,0 +1,23 @@
+@font-face {
+  font-family: TofinoReg;
+  font-weight: 300;
+  font-style:normal;
+  src:url(tofinoreg.woff2) format('woff2'),
+      url(tofinoreg.woff) format('woff')
+}
+
+@font-face {
+  font-family: TofinoMed;
+  font-weight: 600;
+  font-style:normal;
+  src:url(tofinomed.woff2) format('woff2'),
+      url(tofinomed.woff) format('woff')
+}
+
+@font-face {
+  font-family: TofinoBold;
+  font-weight: 800;
+  font-style:normal;
+  src:url(tofinobold.woff2) format('woff2'),
+      url(tofinobold.woff) format('woff')
+}

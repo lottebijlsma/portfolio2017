@@ -1,0 +1,27 @@
+.portfolio-detail {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  @media only screen
+  and (min-device-width : 320px) and (max-device-width : 800px) {
+    flex-flow: column wrap;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .social-info {
+    min-width: 80px;
+  }
+
+  .project-text {
+    margin-bottom: 20px;
+
+    header {margin-bottom: -20px;} //hacky fix
+    p {padding-top: 20px;}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "lint": "eslint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "commitizen": "^2.8.6",
+    "cz-jekyll": "^0.1.2",
+    "eslint": "^3.2.2",
+    "eslint-config-devine": "^1.5.0",
+    "stylelint-config-devine": "^1.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-jekyll"
+    }
+  }
+}
