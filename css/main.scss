@@ -30,6 +30,14 @@ header {
   align-items: center;
 }
 
+.logo {
+    margin-top: 3rem;
+    width: 5.7rem;
+    height: 2rem;
+    transform: rotate(0deg);
+    background-image: url(../img/lotte.svg);
+    background-repeat: none;
+}
 
 .li-about {
   list-style-type: none;
@@ -41,15 +49,15 @@ header {
 
 .content {
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 80%;
 }
 
 
 .main-nav {
   margin-top: 3rem;
   display: flex;
-  z-index: 3;
-  position: absolute;
+  z-index: 4;
+  position: relative;
 
   & li {
     color: $steel-gray;
@@ -57,6 +65,7 @@ header {
     margin-right: 3rem;
     padding: .1rem;
     font-size: 1.6rem;
+    font-weight: 600;
 
     @media (min-width: 0) and (max-width: 666px) {
     margin-top: 3rem;
@@ -66,25 +75,25 @@ header {
 
 .row {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
   padding: 10px 0;
 }
 
 .portfolio-blocks {
-  margin-top: 15rem;
+  margin-top: 7rem;
 }
 
 .portfolio-block {
-  height: 350px;
+  height: 25rem;
   margin-bottom: 120px;
   margin-right: 10px;
 
   @media (min-width: 320px) and (max-width: 666px) {margin-right: 0;}
 
   img {
-    filter: contrast(100%);
-    transition: filter 400ms;
+    object-fit: cover;
+    filter: url('#heat');
   }
 
   & header {
@@ -179,4 +188,15 @@ a:hover {
 
 .footer-title {
   margin-bottom: 2rem;
+}
+
+.main-quote {
+  font-size: 4rem;
+  max-width: 82rem;
+  line-height: 1.2;
+  margin: 7rem 0;
+}
+
+.post-title {
+  text-align: left;
 }

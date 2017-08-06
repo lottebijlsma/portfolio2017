@@ -14,12 +14,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 2rem;
+  margin-top: 7rem;
 }
 
 .fave {
   background: white;
-  border-left: .8rem solid $faded-red;
+  border-left: .8rem solid $steel-gray;
   padding: 3rem;
   margin-right: 5rem;
   margin-top: 5rem;
@@ -38,7 +38,6 @@
 }
 
 .about-img {
-  z-index: -2;
   width: 100vw;
   height: 100%;
   align-self:center;
@@ -63,5 +62,15 @@
 }
 
 .fave-title {
-  color: $faded-red;
+  color: $steel-gray;
+}
+
+.table-row {
+  border-bottom: black 1px solid;
+}
+
+.about-contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
 }
