@@ -16,7 +16,9 @@
   }
 
   .social-info {
-    min-width: 8rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .project-text {
@@ -56,10 +58,14 @@
 
 .project-info {
   border: .1rem solid black;
+  width: 60vw;
+  margin-top: 3rem;
+  text-align: left;
 }
 
 .project-info-title {
-  padding-right: 10rem;
+  text-decoration: underline;
+  padding: 2rem 5rem 1rem 3rem;
   border-left: .1rem solid black;
   font-size: 1.6rem;
   font-weight: 700;
@@ -68,6 +74,7 @@
 
 .project-info-data {
   border-left: .1rem solid black;
+  padding: 0 5rem 2rem 3rem;
 }
 
 .detail-quote {

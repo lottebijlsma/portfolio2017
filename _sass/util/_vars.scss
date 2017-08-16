@@ -1,4 +1,13 @@
-$bg-color: #fff3f3;
+$bg-color: #f8dde6;
+$main-red: #fc0d1b;
 $faded-red: #ff8482;
 $bleu-de-france: #3e85ff;
 $steel-gray: #202533;
+
+@function set-nav-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $steel-gray; // Lighter background, return dark color
+  } @else {
+    @return $main-red; // Darker background, return light color
+  }
+}

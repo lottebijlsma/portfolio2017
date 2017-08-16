@@ -14,12 +14,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 7rem;
+  color: $main-red;
 }
 
 .fave {
   background: white;
-  border-left: .8rem solid $steel-gray;
+  border-left: .8rem solid $main-red;
   padding: 3rem;
   margin-right: 5rem;
   margin-top: 5rem;
@@ -45,10 +45,27 @@
 }
 
 .about-txt {
-  font-size: 1.6rem;
+  font-size: 8rem;
   line-height: 2.3rem;
   max-width: 60vw;
   margin: 0 auto;
+  color: $main-red;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.about-tekst-section::after {
+  content: url(../../img/divider.svg);
+  display: flex;
+  justify-content: center;
+  margin: 7rem 0 7rem 0;
+}
+
+.about-tekst-section::before {
+  content: url(../../img/head.gif);
+  margin: 8rem 0 10rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .about-intro {
@@ -62,12 +79,9 @@
 }
 
 .fave-title {
-  color: $steel-gray;
+  color: $main-red;
 }
 
-.table-row {
-  border-bottom: black 1px solid;
-}
 
 .about-contact {
   display: flex;

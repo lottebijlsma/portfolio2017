@@ -13,10 +13,12 @@
 html {font-size: 62.5%;}
 
 body {
-  background-color: $bg-color;
+  background-color: white;
   color: $steel-gray;
   height: 100%;
 }
+
+#about {background-color: $bg-color;}
 
 h1 {margin-bottom: 10px;}
 
@@ -60,7 +62,7 @@ header {
   position: relative;
 
   & li {
-    color: $steel-gray;
+    color: set-nav-text-color($main-red);
     margin-top: 1rem;
     margin-right: 3rem;
     padding: .1rem;
@@ -85,8 +87,8 @@ header {
 }
 
 .portfolio-block {
-  height: 25rem;
-  margin-bottom: 120px;
+  height: 22.6rem;
+  margin-bottom: 70px;
   margin-right: 10px;
 
   @media (min-width: 320px) and (max-width: 666px) {margin-right: 0;}
@@ -144,7 +146,7 @@ a:hover {
 .a-main-nav:link,
 .a-main-nav:hover,
 .a-main-nav:active,
-.a-main-nav:visited {color: $steel-gray;}
+.a-main-nav:visited {color: set-nav-text-color($main-red);}
 
 .vimeo {
   width: 100%;
@@ -199,4 +201,59 @@ a:hover {
 
 .post-title {
   text-align: left;
+}
+
+.bg-anim {
+  width: 2400px;
+  height: 2400px;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 5;
+  background: -moz-radial-gradient(center, ellipse cover, green 0%, rgba(255, 255, 255, 0) 50%);
+  background: -webkit-radial-gradient(center, ellipse cover, green 0%, rgba(255, 255, 255, 0) 50%);
+  background: radial-gradient(ellipse cover at center, green 0%, rgba(255, 255, 255, 0) 50%);
+}
+
+.text-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.r-words {
+  display: inline;
+}
+.r-words span{
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding-left: .5rem;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  width: 150%;
+  /* aniamtion duration needs to be total time of all delays*/
+  -webkit-animation: rotate-words 12s linear infinite 0s;
+}
+/* set delay on animation to only display one at a time */
+.r-words span:nth-child(2) {
+  -webkit-animation-delay: 3s;
+}
+.r-words span:nth-child(3) {
+  -webkit-animation-delay: 6s;
+}
+
+/* Needs all vendor prefixes
+* Test done on Chrome
+*/
+@-webkit-keyframes rotate-words {
+  0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
+  10% { opacity: 0.3; width: 0px; }
+  20% { opacity: 1; width: 100%; }
+  33% { opacity: 0.3; width: 100%; }
+  40% { opacity: 0.0; width: 100%; }
+  100% { opacity: 0; }
+}
+
+.index-quote {
+  padding: 5rem 0;
 }
