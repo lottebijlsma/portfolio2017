@@ -35,16 +35,6 @@
     align-self: center;
   }
 
-  .project-title {
-    z-index: 3;
-    position: relative;
-    font-size: 3rem;
-    align-self: center;
-    background-color: black;
-    color: white;
-    padding: 1.5rem 2rem;
-    margin-bottom: 25rem;
-  }
 }
 
 .project-image {
@@ -57,30 +47,28 @@
 }
 
 .project-info {
-  border: .1rem solid black;
+  display: flex;
+  justify-content: center;
   width: 60vw;
-  margin-top: 3rem;
+  margin-top: 30rem;
   text-align: left;
 }
 
 .project-info-title {
   text-decoration: underline;
-  padding: 2rem 5rem 1rem 3rem;
-  border-left: .1rem solid black;
+  padding: 0 8rem 1rem 0;
   font-size: 1.6rem;
   font-weight: 700;
   align-item: center;
 }
 
 .project-info-data {
-  border-left: .1rem solid black;
-  padding: 0 5rem 2rem 3rem;
+  padding: 0 8rem 2rem 0;
 }
 
 .detail-quote {
   border-left: 1rem solid $steel-gray;
   padding-left: 3rem;
   margin: 5rem 10rem;
-  font-weight: 300;
   line-height: 2.3rem;
 }

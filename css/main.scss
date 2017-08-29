@@ -13,12 +13,31 @@
 html {font-size: 62.5%;}
 
 body {
-  background-color: white;
+  background-color: #fdfdff;
   color: $steel-gray;
-  height: 100%;
+  max-height: 100%;
 }
 
-#about {background-color: $bg-color;}
+#about {
+  background-color: #FCEDEE;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+#box {
+  position: absolute;
+  z-index: -999;
+  width: 800px;
+  height: 800px;
+  filter: blur(170px);
+  top: 100%;
+  left: 100%;
+  margin: -400px 0 0 -400px;
+  background: #F6DBE0;
+  border-radius: 50%;
+  -webkit-backface-visibility:hidden;
+  pointer-events: none;
+}
 
 h1 {margin-bottom: 10px;}
 
@@ -34,10 +53,9 @@ header {
 
 .logo {
     margin-top: 3rem;
-    width: 5.7rem;
+    width: 2rem;
     height: 2rem;
-    transform: rotate(0deg);
-    background-image: url(../img/lotte.svg);
+    //background-image: url(../img/lotte.svg);
     background-repeat: none;
 }
 
@@ -62,7 +80,7 @@ header {
   position: relative;
 
   & li {
-    color: set-nav-text-color($main-red);
+    color: white;
     margin-top: 1rem;
     margin-right: 3rem;
     padding: .1rem;
@@ -78,8 +96,8 @@ header {
 .row {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 10px 0;
+  justify-content: flex-start;
+  padding: 1rem 0;
 }
 
 .portfolio-blocks {
@@ -89,7 +107,7 @@ header {
 .portfolio-block {
   height: 22.6rem;
   margin-bottom: 70px;
-  margin-right: 10px;
+  margin-right: 4rem;
 
   @media (min-width: 320px) and (max-width: 666px) {margin-right: 0;}
 
@@ -136,17 +154,18 @@ header {
 
 a:link,
 a:active,
-a:visited {color: white;}
+a:visited {color: $steel-gray};
 
 a:hover {
   width: 100%;
-  color: $bleu-de-france
+  color: $main-red;
 }
 
 .a-main-nav:link,
-.a-main-nav:hover,
 .a-main-nav:active,
-.a-main-nav:visited {color: set-nav-text-color($main-red);}
+.a-main-nav:visited {color: $steel-gray;}
+
+.a-main-nav:hover {color: $cool-green};
 
 .vimeo {
   width: 100%;
@@ -164,6 +183,7 @@ a:hover {
   justify-content: space-around;
   padding: 5rem;
   margin-top: 10rem;
+  overflow: hidden;
 }
 
 .footer-section {
@@ -201,18 +221,6 @@ a:hover {
 
 .post-title {
   text-align: left;
-}
-
-.bg-anim {
-  width: 2400px;
-  height: 2400px;
-  position: absolute;
-  pointer-events: none;
-  border-radius: 50%;
-  z-index: 5;
-  background: -moz-radial-gradient(center, ellipse cover, green 0%, rgba(255, 255, 255, 0) 50%);
-  background: -webkit-radial-gradient(center, ellipse cover, green 0%, rgba(255, 255, 255, 0) 50%);
-  background: radial-gradient(ellipse cover at center, green 0%, rgba(255, 255, 255, 0) 50%);
 }
 
 .text-container {

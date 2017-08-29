@@ -1,9 +1,9 @@
 ---
 layout: portfolio
-title: "Case Study - Jaspr"
+title: "Drasil: Astral Projection"
 caption: A school project
-coverimage: img/projects/jaspr.gif
-headerimage: img/projects/header/jaspr.png
+coverimage: img/projects/drasil.jpg
+headerimage: img/projects/header/drasil.jpg
 quote: "By offering this service, Jaspr could have a great impact on society."
 category: "Case study"
 

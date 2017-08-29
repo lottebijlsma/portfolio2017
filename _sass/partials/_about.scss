@@ -25,18 +25,6 @@
   margin-top: 5rem;
 }
 
-.fave-love{
-  width: 25rem;
-}
-
-.fave-current{
-  width: 35rem;
-}
-
-.fave-study{
-  width: 27rem;
-}
-
 .about-img {
   width: 100vw;
   height: 100%;
@@ -45,20 +33,12 @@
 }
 
 .about-txt {
-  font-size: 8rem;
+  font-size: 2.2rem;
   line-height: 2.3rem;
   max-width: 60vw;
   margin: 0 auto;
-  color: $main-red;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-}
-
-.about-tekst-section::after {
-  content: url(../../img/divider.svg);
-  display: flex;
-  justify-content: center;
-  margin: 7rem 0 7rem 0;
+  color: $steel-gray;
+  line-height: 1.3;
 }
 
 .about-tekst-section::before {
@@ -66,6 +46,10 @@
   margin: 8rem 0 10rem 0;
   display: flex;
   justify-content: center;
+}
+
+.about-tekst-section {
+  margin-bottom: 40rem;
 }
 
 .about-intro {
@@ -87,4 +71,8 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10rem;
+}
+
+a.about-link:link {
+  text-decoration: underline;
 }
