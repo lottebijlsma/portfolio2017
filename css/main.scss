@@ -24,12 +24,12 @@ body {
   max-height: 100%;
 }
 
-#box {
+.box {
   position: absolute;
   z-index: -999;
   width: 800px;
   height: 800px;
-  filter: blur(170px);
+  filter: blur(160px);
   top: 100%;
   left: 100%;
   margin: -400px 0 0 -400px;
