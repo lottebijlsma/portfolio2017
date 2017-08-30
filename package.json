@@ -13,5 +13,8 @@
     "commitizen": {
       "path": "./node_modules/cz-jekyll"
     }
+  },
+  "dependencies": {
+    "velocity-animate": "^1.5.0"
   }
 }

@@ -3,31 +3,40 @@ layout: default
 ---
 <div class='portfolio-detail'>
   <div class='project-header'>
-    <h1 class='project-title'>{{ page.title }}</h1>
-    <img src='../../../../../{{ page.coverimage }}' width='1280'/>
+    <img class='project-image' src='../../../../../{{ page.headerimage }}'/>
   </div>
+
   <section class='social-info'>
-    {% if page.link %}
-      <h3>Online</h3>
-      <a href="{{ page.link }}">Watch me!</a>
-    {% endif %}
-
-    {% if page.datum %}
-      <h3>Date</h3>
-      <p>{{page.datum}}</p>
-    {% endif %}
-
-    {% if page.category %}
-      <h3>Category</h3>
-      <ul>
-        <li> {{page.category}} </li>
-      </ul>
-    {% endif %}
+    <table class='project-info'>
+      <tr>
+        <th class="project-info-title">Online</th>
+        <th class="project-info-title">Date</th>
+        <th class="project-info-title">Category</th>
+      </tr>
+      <tr>
+        <td class="project-info-data">
+          {% if page.link %}
+            <a href="{{ page.link }}">Watch me</a>
+          {% endif %}
+        </td>
+        <td class="project-info-data">
+          {% if page.datum %}
+            <p>{{page.datum}}</p>
+          {% endif %}
+        </td>
+        <td class="project-info-data">
+          {% if page.category %}
+            <p>{{page.category}}</p>
+          {% endif %}
+        </td>
+      </tr>
+    </table>
   </section>
 
+
   <section class='project-text'>
-    <header><h1>{{ page.title }}</h1></header>
-    {{content}}
+    <header><h1 class='main-quote'>"{{ page.quote }}"</h1></header>
+    <div class='content'>{{content}}</div>
   </section>
 </div>
 <!-- This is currently broken due to an unresolved path -->
