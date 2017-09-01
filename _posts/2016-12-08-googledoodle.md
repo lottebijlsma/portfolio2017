@@ -6,7 +6,7 @@ coverimage: img/projects/doodle.jpg
 headerimage: img/projects/header/doodle.jpg
 quote: "Nico was one of the most fascinating and mysterious women of her time."
 category: motion
-
+client: Devine
 link: https://vimeo.com/194825195
 datum: 08-12-16
 ---

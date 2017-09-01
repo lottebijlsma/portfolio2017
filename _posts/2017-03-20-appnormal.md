@@ -6,7 +6,7 @@ coverimage: img/projects/drasil.jpg
 headerimage: img/projects/header/drasil.jpg
 quote: "By offering this service, Jaspr could have a great impact on society."
 category: "Case study"
-
+client: Devine 
 link: https://student.howest.be/lotte.bijlsma/20162017/ma4/tribute/
 datum: 19-05-17
 ---

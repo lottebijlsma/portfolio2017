@@ -30,6 +30,16 @@ layout: default
           {% endif %}
         </td>
       </tr>
+      <tr>
+        <td>
+          {% if page.team %}
+            <h3>Team</h3>
+            {% for member in page.team%}
+              <li>{{member}}</li>
+            {% endfor %}
+          {% endif %}
+        </td>
+      </tr>
     </table>
   </section>
 
