@@ -38,12 +38,12 @@
   }
 
   .project-text {
-    margin-bottom: 2rem;
     p {
-      padding-top: 2rem;
+      padding-bottom: 2rem;
       line-height: 2.3rem;
     }
     div {max-width: 55vw;}
+    a:link {text-decoration: underline;}
   }
 
   .project-header {
