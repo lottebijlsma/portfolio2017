@@ -3,7 +3,7 @@ layout: default
 title: "Portfolio"
 description: "Portfolio for Lotte Bijlsma"
 ---
-  <h1 class='main-quote index-quote'>Digital creative &amp; problem solver; <br/> currently looking for a <em class='kickass'>kickass</em> internship.</h1>
+  <h1 class='main-quote index-quote'>Digital creative &amp; problem solver; <br/> currently looking for a kickass internship.</h1>
 <div class='portfolio-blocks'>
   <div class='row'>
     {% for post in site.posts %}
@@ -12,7 +12,7 @@ description: "Portfolio for Lotte Bijlsma"
         <img src="{{post.coverimage | prepend: site.baseurl}}" alt="{{post.title}}"
         width="340" height="225"/>
       </a>
-      <h1 class='post-title'>{{post.title}} &bullet; {{post.category}}</h1>
+      <!-- <h1 class='post-title'>{{post.title}} &bullet; {{post.category}}</h1> -->
     </div>
     {% endfor %}
   </div>

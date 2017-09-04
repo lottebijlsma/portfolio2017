@@ -1,44 +1,46 @@
 ---
 layout: default
 ---
-<div class='portfolio-detail'>
+<section class='portfolio-detail'>
+  <h1 class='project-detail-title'>{{page.title}}</h1>
+  <div class='project-info'>
+    <div class='project-info-block'>
+      {% if page.team %}
+        <h1 class='project-info-block-title'>Team</h1>
+        <div class='members'>
+          {% for member in page.team%}
+            <li class='member'>{{member}}</li>
+          {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    <div class='project-info-block'>
+      {% if page.client %}
+        <h1 class='project-info-block-title'>Client</h1>
+        <p>{{page.client}}</p>
+      {% endif %}
+    </div>
+    <div class='project-info-block'>
+      {% if page.datum %}
+        <h1 class='project-info-block-title'>When</h1>
+        <p>{{page.datum}}</p>
+      {% endif %}
+    </div>
+    <div class='project-info-block'>
+      {% if page.category %}
+        <h1 class='project-info-block-title'>Type</h1>
+        <p>{{page.category}}</p>
+      {% endif %}
+    </div>
+  </div>
   <div class='project-header'>
     <img class='project-image' src='../../../../../{{ page.headerimage }}'/>
   </div>
-
-  <section class='social-info'>
-    <table class='project-info'>
-      <tr>
-        <th class="project-info-title">Online</th>
-        <th class="project-info-title">Date</th>
-        <th class="project-info-title">Category</th>
-      </tr>
-      <tr>
-        <td class="project-info-data">
-          {% if page.link %}
-            <a href="{{ page.link }}">Watch me</a>
-          {% endif %}
-        </td>
-        <td class="project-info-data">
-          {% if page.datum %}
-            <p>{{page.datum}}</p>
-          {% endif %}
-        </td>
-        <td class="project-info-data">
-          {% if page.category %}
-            <p>{{page.category}}</p>
-          {% endif %}
-        </td>
-      </tr>
-    </table>
-  </section>
-
-
   <section class='project-text'>
     <header><h1 class='main-quote'>"{{ page.quote }}"</h1></header>
     <div class='content'>{{content}}</div>
   </section>
-</div>
+</section>
 <!-- This is currently broken due to an unresolved path -->
 <!-- <section class='project-images'>
   <header><h2>IMAGES / STILLS / SCREENSHOTS</h2></header>

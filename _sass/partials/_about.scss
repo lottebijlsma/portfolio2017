@@ -14,7 +14,9 @@
     margin-top: 2rem;
 
     &::before {
-      content: url(../../img/head.gif);
+      content: '';
+      background: #99E7D9, url(../../img/head.gif);
+      background-blend-mode: multiply;
       margin: 8rem 0 7rem 0;
       display: flex;
       justify-content: center;

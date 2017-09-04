@@ -19,21 +19,23 @@ body {
 }
 
 #about {
-  background-color: #FCEDEE;
+  // #FCEDEE
+  background-color: white;
   overflow: hidden;
-  max-height: 100%;
 }
 
 .box {
   position: absolute;
   z-index: -999;
-  width: 800px;
-  height: 800px;
-  filter: blur(160px);
+  width: 500px;
+  height: 500px;
+  filter: blur(180px);
   top: 100%;
   left: 100%;
-  margin: -400px 0 0 -400px;
-  background: #F6DBE0;
+  margin: -250px 0 0 -250px;
+  // #F6DBE0
+  background: #99E7D9;
+
   border-radius: 50%;
   -webkit-backface-visibility:hidden;
   pointer-events: none;
@@ -52,11 +54,15 @@ header {
 }
 
 .logo {
-    margin-top: 3rem;
-    width: 2rem;
-    height: 2rem;
-    //background-image: url(../img/lotte.svg);
-    background-repeat: none;
+  margin-top: 3.5rem;
+  width: 4rem;
+  height: 4rem;
+  transition: transform .5s;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+  }
 }
 
 .li-about {
@@ -106,14 +112,19 @@ header {
 
 .portfolio-block {
   height: 22.6rem;
-  margin-bottom: 70px;
+  margin-bottom: 4rem;
   margin-right: 4rem;
 
   @media (min-width: 320px) and (max-width: 666px) {margin-right: 0;}
 
   img {
     object-fit: cover;
-    filter: url('#heat');
+    transition: all .5s;
+
+    &:hover {
+      transition: all .5s;
+      filter: drop-shadow(.5rem .5rem .7rem rgba(0,0,0,0.07));
+    }
   }
 
   & header {
