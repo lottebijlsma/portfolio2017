@@ -5,6 +5,16 @@ layout: default
   <h1 class='project-detail-title'>{{page.title}}</h1>
   <div class='project-info'>
     <div class='project-info-block'>
+      {% if page.team %}
+        <h1 class='project-info-block-title'>Team</h1>
+        <div class='members'>
+          {% for member in page.team%}
+            <li class='member'>{{member}}</li>
+          {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    <div class='project-info-block'>
       {% if page.client %}
         <h1 class='project-info-block-title'>Client</h1>
         <p>{{page.client}}</p>
@@ -20,14 +30,6 @@ layout: default
       {% if page.category %}
         <h1 class='project-info-block-title'>Type</h1>
         <p>{{page.category}}</p>
-      {% endif %}
-    </div>
-    <div class='project-info-block'>
-      {% if page.team %}
-        <h1 class='project-info-block-title'>Team</h1>
-        {% for member in page.team%}
-          <li class='member'>{{member}}</li>
-        {% endfor %}
       {% endif %}
     </div>
   </div>

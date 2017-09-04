@@ -1,10 +1,10 @@
 ---
 layout: portfolio
-title: "Google Doodle"
+title: "Google Doodle - Summer Solstice"
 caption: A school project for motion graphics
 coverimage: img/projects/doodle.jpg
 headerimage: img/projects/header/doodle.jpg
-quote: "Nico was one of the most fascinating and mysterious women of her time."
+quote: "A Google Doodle is a special, temporary alteration of the logo on Google's homepage that is intended to celebrate holidays, events, achievements and people."
 category: motion
 client: Devine
 link: https://vimeo.com/194825195
