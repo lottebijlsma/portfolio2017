@@ -178,15 +178,6 @@ a:hover {
 
 .a-main-nav:hover {color: $cool-green};
 
-.vimeo {
-  width: 100%;
-  height: 50vw;
-
-  @media (min-width: 320px) and (max-width: 800px) {
-    height: 60vw;
-  }
-}
-
 .footer {
   background: $steel-gray;
   color: white;
@@ -227,7 +218,7 @@ a:hover {
   font-size: 4rem;
   max-width: 82rem;
   line-height: 1.2;
-  margin: 7rem 0;
+  margin: 6rem 0;
 }
 
 .post-title {
