@@ -5,7 +5,7 @@ caption: A school project
 coverimage: img/projects/drasil.jpg
 headerimage: img/projects/header/drasil.png
 quote: "Yggdrasil is an immense mythical tree that connects the nine worlds in Norse cosmology."
-category: "Case study"
+category: "app design"
 client: Devine Howest
 link: https://student.howest.be/lotte.bijlsma/20162017/ma4/tribute/
 datum: 19-05-17
