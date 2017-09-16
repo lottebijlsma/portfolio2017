@@ -2,40 +2,43 @@
 layout: default
 ---
 <section class='portfolio-detail'>
-  <h1 class='project-detail-title'>{{page.title}}</h1>
-  <div class='project-info'>
-    <div class='project-info-block'>
-      {% if page.team %}
-        <h1 class='project-info-block-title'>Team</h1>
-        <div class='members'>
-          {% for member in page.team %}
-            <li class='member'>{{member}}</li>
-          {% endfor %}
-        </div>
-        {% endif %}
-    </div>
-    <div class='project-info-block'>
-      {% if page.client %}
-        <h1 class='project-info-block-title'>Client</h1>
-        <p>{{page.client}}</p>
-      {% endif %}
-    </div>
-    <div class='project-info-block'>
-      {% if page.datum %}
-        <h1 class='project-info-block-title'>When</h1>
-        <p>{{page.datum}}</p>
-      {% endif %}
-    </div>
-    <div class='project-info-block'>
-      {% if page.category %}
-        <h1 class='project-info-block-title'>Type</h1>
-        <p>{{page.category}}</p>
-      {% endif %}
-    </div>
-  </div>
   <div class='project-header'>
     <img class='project-image' src='../../../../../{{ page.headerimage }}'/>
   </div>
+  <div class='project-info'>
+    <h1 class='project-detail-title'>{{page.title}}</h1>
+    <div class='project-info-section'>
+      <div class='project-info-block'>
+        {% if page.team %}
+          <h1 class='project-info-block-title'>Team</h1>
+          <div class='members'>
+            {% for member in page.team %}
+              <li class='member'>{{member}}</li>
+            {% endfor %}
+          </div>
+          {% endif %}
+      </div>
+      <div class='project-info-block'>
+        {% if page.client %}
+          <h1 class='project-info-block-title'>Client</h1>
+          <p>{{page.client}}</p>
+        {% endif %}
+      </div>
+      <div class='project-info-block'>
+        {% if page.link %}
+          <h1 class='project-info-block-title'>Online</h1>
+          <a href='{{page.link}}' target='_blank'>See online</a>
+        {% endif %}
+      </div>
+      <!-- <div class='project-info-block'>
+        {% if page.category %}
+          <h1 class='project-info-block-title'>Type</h1>
+          <p>{{page.category}}</p>
+        {% endif %}
+      </div> -->
+    </div>
+  </div>
+
   <section class='project-text'>
     <header><h1 class='main-quote'>"{{ page.quote }}"</h1></header>
     <div class='content'>{{content}}</div>

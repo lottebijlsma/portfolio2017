@@ -49,17 +49,22 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px){
+    z-index: 44;
+    position: absolute;
+  }
 }
 
 .logo {
   margin-top: 3.5rem;
-  width: 1.2rem;
-  height: 1.2rem;
-  transition: transform .5s;
+  width: 6rem;
+  height: 2rem;
+  transition: all 0.5s;
 
   &:hover {
     transform: scale(1.1);
-    transition: transform .5s;
+    transition: all 0.5s;
   }
 }
 
@@ -100,8 +105,7 @@ header {
 .row {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  padding: 1rem 0;
+  justify-content: space-between;
 }
 
 .portfolio-blocks {
@@ -109,15 +113,13 @@ header {
 }
 
 .portfolio-block {
-  height: 22.6rem;
-  margin-bottom: 4rem;
-  margin-right: 4rem;
-
-  @media (min-width: 320px) and (max-width: 666px) {margin-right: 0;}
+  padding-bottom: 2rem;
 
   img {
     object-fit: cover;
     transition: all .5s;
+    width: 24vw;
+    height: 100%;
 
     &:hover {
       transition: all .5s;
@@ -125,10 +127,10 @@ header {
     }
   }
 
-  & header {
-    display: flex;
-    justify-content: center;
-  }
+  // & header {
+  //   display: flex;
+  //   justify-content: center;
+  // }
 }
 
 .social-icons {
@@ -219,9 +221,9 @@ a:hover {
 
 .main-quote {
   font-size: 4rem;
-  max-width: 82rem;
+  max-width: 70rem;
   line-height: 1.2;
-  margin: 5rem 0;
+  margin: 6rem 0;
 }
 
 .post-title {

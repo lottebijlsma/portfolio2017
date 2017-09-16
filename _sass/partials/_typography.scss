@@ -1,6 +1,6 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.65rem;
   line-height: 1.2;
   font-weight: 400;
 }
@@ -51,12 +51,3 @@ a:visited { text-decoration: none; }
 .main-nav li { text-transform: uppercase; }
 
 .post-title { text-align: center; }
-
-.social-icons {
-
-  i {
-    @media (max-width: 330px) { font-size: 2.2rem; }
-
-    @media (min-width: 331px) and (max-width: 958px) { font-size: 2.2rem; }
-  }
-}
