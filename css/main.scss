@@ -134,14 +134,12 @@ h3 { width: 100%; }
 
 .portfolio-block {
   margin-bottom: 4rem;
-  // background: rgba(200, 100, 153, 0.9);
 
   img {
     object-fit: cover;
     transition: all .5s;
     width: 24vw;
     height: 100%;
-    // mix-blend-mode: multiply;
 
     @media (max-width: 900px) {
       width: 38vw;
@@ -210,40 +208,33 @@ a:hover {
 .a-main-nav:visited,
 .a-main-nav:hover { color: $steel-gray; }
 
+.foot-txt {
+  font-size: 1.5rem;
+}
+
 .footer {
-  font-size: 1.4rem;
-  background: $steel-gray;
-  color: $bg-color;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  flex-direction: column;
+  background-color: $steel-gray;
   padding: 5rem;
+  color: $main-pink;
   margin-top: 10rem;
-  overflow: hidden;
+  text-align: center;
+  font-size: 1.5rem;
 
   a:link,
   a:visited,
-  a:active { color: white; }
-}
+  a:active {
+    color: $main-pink;
 
-// .footer-section {
-//   max-width: 30rem;
-// }
-
-.social-section {
-  display: flex;
-  flex-flow: row nowrap;
+    &:hover {color: $cool-green;}
+   }
 }
 
 .socials {
   margin-right: 3rem;
   font-size: 1.5rem;
 }
-//
-// .foot-txt {
-//   font-size: 1.4rem;
-//   margin-top: 1rem;
-// }
 
 .footer-title {
   margin-bottom: 2rem;
