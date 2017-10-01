@@ -211,10 +211,12 @@ a:hover {
 .a-main-nav:hover { color: $steel-gray; }
 
 .footer {
+  font-size: 1.4rem;
   background: $steel-gray;
   color: $bg-color;
   display: flex;
-  justify-content: space-around;
+  flex-flow: column nowrap;
+  justify-content: center;
   padding: 5rem;
   margin-top: 10rem;
   overflow: hidden;
@@ -235,10 +237,7 @@ a:hover {
 
 .socials {
   margin-right: 3rem;
-
-  & p {
-    padding-top: .8rem;
-  }
+  font-size: 1.5rem;
 }
 //
 // .foot-txt {
