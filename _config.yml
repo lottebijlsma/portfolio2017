@@ -45,6 +45,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - package.json
+  - package-lock.json
   - README.md
   - LICENSE
   - vendor
