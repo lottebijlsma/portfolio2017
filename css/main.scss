@@ -19,7 +19,6 @@ body {
 }
 
 #about {
-
   @media (max-width: 1024px) {
     overflow: auto;
     background-color: $bg-color;
@@ -30,7 +29,6 @@ body {
 }
 
 .box {
-
   @media (max-width: 1024px) {
     display: none;
   }
@@ -154,44 +152,6 @@ h3 { width: 100%; }
       filter: brightness(40%);
     }
   }
-
-  // & header {
-  //   display: flex;
-  //   justify-content: center;
-  // }
-}
-
-.social-icons {
-  align-items: center;
-  display: flex;
-  height: 50px;
-  justify-content: center;
-
-  @include mq(iphone-5) { justify-content: center; }
-
-  @include mq(iphone-6) { justify-content: center; }
-
-  @include mq(iphone-6-landscape) { justify-content: center; }
-
-  @include mq(ipad) { justify-content: center; }
-
-  i {
-    color: $steel-gray;
-    padding: 5px;
-
-    @media (max-width: 330px) {
-      padding-left: 1rem;
-    }
-
-    @media (min-width: 331px) and (max-width: 958px) {
-      padding-left: 1.2rem;
-    }
-  }
-}
-
-.social-info {
-  margin-bottom: 20px;
-  margin-right: 120px;
 }
 
 a:link,
@@ -213,6 +173,14 @@ a:hover {
 }
 
 .footer {
+  @media (max-width: 356px) {
+    text-align: left;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 2rem;
+  }
+
   display: flex;
   flex-direction: column;
   background-color: $steel-gray;
@@ -227,8 +195,8 @@ a:hover {
   a:active {
     color: $main-pink;
 
-    &:hover {color: $cool-green;}
-   }
+    &:hover { color: $cool-green; }
+  }
 }
 
 .socials {
@@ -241,7 +209,6 @@ a:hover {
 }
 
 .main-quote {
-
   @media (max-width: 650px) {
     display: none;
   }
