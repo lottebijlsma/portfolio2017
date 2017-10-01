@@ -1,10 +1,11 @@
-<header class='content header-content'>
-  <a href='/'>
-    <img class='logo' src='../../../../../img/head.svg'></img>
+<header class="content header-content">
+  <a href="/">
+    <!-- TODO: use prepend to prepend siteurl here instead of globbing up 5 level -->
+    <img class="logo" src="../../../../../img/head.svg"></img>
   </a>
-  <ul class='main-nav'>
-		<li><a class='a-main-nav' href="{{ "/" | prepend: site.baseurl }}">projects</a></li>
-		<!-- <li><a class='a-main-nav' href="https://blog.lottebijlsma.be">blog</a></li> -->
-    <li><a class='a-main-nav' href="{{ "/about" | prepend: site.baseurl }}">about</a></li>
+  <ul class="main-nav">
+		<li><a class="a-main-nav" href="{{ "/" | prepend: site.baseurl }}">projects</a></li>
+		<!-- <li><a class="a-main-nav" href="https://blog.lottebijlsma.be">blog</a></li> -->
+    <li><a class="a-main-nav" href="{{ "/about" | prepend: site.baseurl }}">about</a></li>
   </ul>
 </header>
