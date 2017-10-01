@@ -1,3 +1,7 @@
 {
- "extends" : "devine"
+ "extends" : "devine",
+ "globals": {
+    "TweenMax": true,
+    "Elastic": true
+  }
 }
