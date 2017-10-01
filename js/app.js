@@ -7,5 +7,3 @@ function moveBox (e) {
 }
 
 window.addEventListener(`mousemove`, moveBox);
-//
-// $(window).on(`mousemove`, moveBox);

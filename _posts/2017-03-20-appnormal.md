@@ -22,14 +22,14 @@ Have seen some concepts of past year, I wanted to create something **original**.
 
 Next, I did some full on **research** about Yggdrasil and the 9 dimensions, astral projection, runes and astral projection methods, which you can read [here](link) (it's Dutch). After my research, I already started to feel this mood in my head so I created a **mood- and styleboard**. The styleboard being heavy influenced by illustrator [Marina Muun](http://www.marinamuun.com/), see images below. After this, I **wrote out** my full **concept** with all of the wanted features, made some flowcharts and started sketching out some wireframes. Interested in my research? You can read all about it [here](link). Then, I was finally able to start with the design!
 
-![Styleboard](http://res.cloudinary.com/lottebijlsma/image/upload/q_70/v1504622610/Portfolio/Drasil/inspiration.jpg)
+![Marina Muun](http://res.cloudinary.com/lottebijlsma/image/upload/v1506864265/Portfolio/Drasil/marinamuun.jpg)
 
 
 ## Concept
 Meditating is big nowadays (see for example Headspace). **Drasil is an app that helps people astral project (meditate) to other dimensions**.
 Due to the **multiple projection** methods, you get a **personalized** plan that fit your needs. If one method doesn't fit, just choose another and off you go. The app is connected to the tree of life, **Yggdrasil**. Due to this connection you can travel to one of the accessible dimensions with your **astral body**. The app also comes with some **quick meditating options** for when you're stressed out and in a rush, so you can take a deep breath and conquer the world again.
 
-![Astral Projection Methods](http://res.cloudinary.com/lottebijlsma/image/upload/c_scale,q_100,w_800/v1504622907/Portfolio/Drasil/astral.jpg)
+![Astral Projection Methods](http://res.cloudinary.com/lottebijlsma/image/upload/v1506864265/Portfolio/Drasil/methods.jpg)
 
 
 ## Screens

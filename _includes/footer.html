@@ -1,5 +1,33 @@
 <footer class='footer'>
-  <div class='footer-social footer-section'>
+  <div class='footer-copyright footer-section text-container'>
+    <h1 class='foot-txt'>Made by Lotte Bijlsma with great enthusiasm and some chai lattes
+    </h1>
+  </div>
+  <div class='footer-section social-section'>
+    <div class='socials'>
+      {% if site.site_theme.behance %}
+        <a href="https://be.net/{{ site.site_theme.behance }}" target="_blank">
+          <p>Behance</p>
+        </a>
+      {% endif %}
+      {% if site.site_theme.dribble %}
+        <a href="https://dribbble.com/{{ site.site_theme.dribble }}" target="_blank">
+          <p>Dribbble</p>
+        </a>
+      {% endif %}
+    </div>
+    <div class='socials'>
+      {% if site.site_theme.vimeo %}
+        <a href="https://vimeo.com/{{ site.site_theme.vimeo }}" target="_blank">
+          <p>Vimeo</p>
+        </a>
+      {% endif %}
+      <a href="https://github.com/lottebijlsma" target="_blank">
+        <p>Github</p>
+      </a>
+    </div>
+  </div>
+  <!-- <div class='footer-social footer-section'>
     <h1 class='footer-title'>Find me here</h1>
     <div class='social-section'>
       <div class='socials'>
@@ -53,5 +81,5 @@
         <span>love</span>
       </div>
     </h1>
-  </div>
+  </div> -->
 </footer>
