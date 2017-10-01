@@ -1,39 +1,27 @@
 ---
 layout: portfolio
 title: "Bakkie Troost"
-caption: A school project for motion graphics
+caption: A crazy ass website
 coverimage: img/projects/bakkie.jpg
 headerimage: img/projects/header/bakkie.jpg
 quote: "Bakkie Troost, a Dutch expression meaning 'a cup of consolation', which refers to a cup of coffee"
-category: motion
+category: web
 client: Devine Howest
 link: https://vimeo.com/194825195
-datum: 08-12-16
+datum: 06-20-16
 team:
   - Lotte Bijlsma
 ---
 
 ## Brief & Concept
 
-The brief was to create a Google Doodle about a day or an event in the future that has some meaning to you (or pick teacher's day if you wanted to suck up to the teachers 😉).
+The brief was to think of a kind of truck festival (not a food truck festival). We had to figure out a creative and crazy [blank]truck festival and create around five trucks in that particular theme. The trucks needed to offer either a workshop or a product and the things they sold also needed to be available online.
 
-My first decision was to go with Kingsday, but eventually, the creativity didn't strike and my time was running out. I decided to change my subject to the summer solstice. I get shivery really quickly and every time I see a blanket (even if it's 25 degrees), I love to snuggle up underneath it. So I guess you could say that I love warmth and that's important to me, reason enough to create this doodle about it.
+I decided to go a bit crazy and political and named my project "Bakkie Troost" I know there is a lot of rivalry between the Flemish and the Walloons, so I, as a Dutchie, wanted to have my Flemish friends' back and comfort them with a solution if things ever were to go wrong. So if things go south and Belgium splits in two, I want my Flemish friends to know they're always welcome in my country, the Netherlands! So that's their "Bakkie Troost"!
 
-When I think about summer, I think about the sea, beaches, sunglasses and most importantly ice cream. These are the things I really wanted to incorporate. I was lucky with Google's colors, because they are already very bright and colorful, so I could definitely use them in my project.
-
-![Font](http://res.cloudinary.com/lottebijlsma/image/upload/v1504606468/Portfolio/Google%20Doodle/Asset_1.svg)
-
-
-On the first try, I had my go with the original font, but I felt like it wasn't playful enough, so I decided to make it rounder. I showed it to my teachers and agreed with me that the second one seemed more playful, fun and summery, while still being recognizable as Google.
-
-
-Then, I got to animating. I wanted to keep it simple so that it wouldn't be an explosion to the eye. I think the animations are really well-balanced and flowy. The timing is just right.
-
-
-![Doodle gif](http://res.cloudinary.com/lottebijlsma/image/upload/c_crop,h_320,w_800/v1481209862/Google-Doodle_wmgs8o.gif)
+![Font](http://res.cloudinary.com/lottebijlsma/image/upload/c_scale,q_60,w_800/v1471032676/Portfolio/MAII%20Bakkie%20Troostival/poster.jpg)
 
 
 
 
-
-This project was featured at the [Devine Showreel of 2017](https://vimeo.com/231826598), in their leaflet and on their open day!
+This project was featured at the [Devine Showreel of 2016](https://vimeo.com/172918604)!
