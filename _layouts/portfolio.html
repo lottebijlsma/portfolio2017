@@ -1,51 +1,54 @@
 ---
 layout: default
 ---
-<section class='portfolio-detail'>
-  <div class='project-header'>
-    <img class='project-image' src='../../../../../{{ page.headerimage }}'/>
+<section class="portfolio-detail">
+  <div class="project-header">
+    <!-- TODO: use prepend to prepend siteurl here instead of globbing up 5 level -->
+    <img class="project-image" src="../../../../../{{ page.headerimage }}"/>
   </div>
-  <div class='project-info'>
-    <h1 class='project-detail-title'>{{page.title}}</h1>
-    <div class='project-info-section'>
-      <div class='project-info-block'>
+  <div class="project-info">
+    <h1 class="project-detail-title">{{page.title}}</h1>
+    <div class="project-info-section">
+      <div class="project-info-block">
         {% if page.team %}
-          <h1 class='project-info-block-title'>Team</h1>
-          <div class='members'>
+          <h1 class="project-info-block-title">Team</h1>
+          <div class="members">
             {% for member in page.team %}
-              <li class='member'>{{member}}</li>
+              <li class="member">{{member}}</li>
             {% endfor %}
           </div>
           {% endif %}
       </div>
-      <div class='project-info-block'>
+      <div class="project-info-block">
         {% if page.client %}
-          <h1 class='project-info-block-title'>Client</h1>
+          <h1 class="project-info-block-title">Client</h1>
           <p>{{page.client}}</p>
         {% endif %}
       </div>
-      <div class='project-info-block'>
+      <div class="project-info-block">
         {% if page.link %}
-          <h1 class='project-info-block-title'>Online</h1>
-          <a href='{{page.link}}' target='_blank'>See online</a>
+          <h1 class="project-info-block-title">Online</h1>
+          <a href="{{page.link}}" target="_blank">See online</a>
         {% endif %}
       </div>
-      <!-- <div class='project-info-block'>
+      <!-- <div class="project-info-block">
         {% if page.category %}
-          <h1 class='project-info-block-title'>Type</h1>
+          <h1 class="project-info-block-title">Type</h1>
           <p>{{page.category}}</p>
         {% endif %}
       </div> -->
     </div>
   </div>
 
-  <section class='project-text'>
-    <header><h1 class='portfolio-quote'>"{{ page.quote }}"</h1></header>
-    <div class='content'>{{content}}</div>
+  <section class="project-text">
+    <header><h1 class="portfolio-quote">"{{page.quote}}"</h1></header>
+    <div class="content">
+      {{content}}
+    </div>
   </section>
 </section>
-<!-- This is currently broken due to an unresolved path -->
-<!-- <section class='project-images'>
+<!-- BUG: This is currently broken due to an unresolved path -->
+<!-- <section class="project-images">
   <header><h2>IMAGES / STILLS / SCREENSHOTS</h2></header>
   {% for image in page.images %}
     <img src="{{image}}" alt={{image}} />
