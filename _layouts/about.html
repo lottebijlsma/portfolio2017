@@ -17,6 +17,11 @@ layout: default
       <li class='li-about'>Wes Anderson</li>
       <li class='li-about'>HAY &amp; Arhoj</li>
     </ul>
+  <canvas class="box"></canvas>
+  <div class="about">
+    <section>
+      {{ content }}
+    </section>
   </div>
   <div class='fave-current fave'>
     <h1 class='fave-title'>Current Projects</h1>
@@ -39,4 +44,6 @@ layout: default
 <canvas class='box'></canvas>
 <script src="{{ "/js/app.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/TweenMax.min.js" | prepend: site.baseurl }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="{{ "/js/app.js" | prepend: site.baseurl }}"></script>
 </body>
